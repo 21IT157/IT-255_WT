@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<head>
+    <tittle>
+    </tittle>
+    <link rel="website icon" type="png"
+    href="./CALCULATOR_LOGO.png">
+</head>
+<html>
+<script>
+function calc(form) {
+
+var D = "0";
+var A = document.getElementById("num1").value;
+var B = document.getElementById("op").value;
+if(B!='+'||'-'||'*'||'/')
+{
+  alert("ENTER A VALID OPERATOR");
+}
+var C = document.getElementById("num2").value;
+
+if (B === "+")
+{
+D = parseFloat(A)+parseFloat(C); 
+}
+else if(B === "-")
+{
+D = parseFloat(A)-parseFloat(C); 
+}
+else if(B === "*")
+{
+  D = parseFloat(A)*parseFloat(C); 
+}
+else if (B === "/")
+{
+  D = parseFloat(A)/parseFloat(C); 
+}
+document.getElementById("result").innerHTML = D;
+return false;
+}
+</script>
+    <h1>CALCULATOR</h1>  
+        <input type="text" placeholder="enter the value" id="num1"/>
+        <br>  
+      <br>
+        <input type="text" placeholder="enter the operator"  id="op"/>
+        <br>  
+      <br>
+        <input type="text" placeholder="enter the value " id="num2"/>
+        <br>  
+        <br>
+        <button type = " " onclick="calc(this)">Evaluate</button>
+        <p id="result" name="r1"></p>
+      </div>
+    </div>
+</body>
+</html>
