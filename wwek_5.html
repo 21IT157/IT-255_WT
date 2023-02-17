@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        const user = {
+  name: 'Nehal Mahida',
+  userName: 'nehal_mahida',
+  password: 'password:)',
+  login: function(userName, password) {
+    if (userName === this.userName && password === this.password) {
+      prompt('Login Successfully');
+    } else {
+      alert('Authentication Failed!!');
+    }
+  },
+};
+
+
+user.login('nehal', 'nehal');
+user.login('nehal_mahida', 'password:)');
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Handling</title>
+</head>
+<body>
+    <button>Show Time</button>
+    <p id="time"></p>
+    <p id="date"></p>
+    <script src="./w5.js"></script>
+</body>
+</html>
+

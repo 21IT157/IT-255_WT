@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<head>
+    <title>
+       : TEMPERATURE CONVERTOR :
+    </title>
+    <link rel="website icon" type="png"
+    href="website icon.png">
+    <script>
+        function ctof()
+        {
+            let num1 = prompt("ENTER THE TEMPERATUTRE");
+            var F = num1 * (9/5) + 32;
+            document.write(F);
+        }
+    </script>
+</head>
+<body style = "font-size : 20px">
+    <h1 style ="color:aqua;">Convert The Temperature from Celsuis to Farenheit</h1>
+    <label for="fname">CLICK BELOW TO CALCULATE </label><br>
+  <!-- <input type="text" id="temperature" name=" "><br> -->
+    <input type = "button" onclick = ctof()  value = " Calculate "> 
+    <br>
+</body>

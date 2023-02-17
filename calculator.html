@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<head>
+    <title>
+       : TEMPERATURE CONVERTOR :
+    </title>
+    <script >
+        function  add()
+        {
+            var num1 = parseInt(prompt('Enter the first number '));
+            var num2 = parseInt(prompt('Enter the second number '));
+            var sum = num1+num2;
+            document.write(sum);
+        }
+        function  sub()
+        {
+            var num1 = parseInt(prompt('Enter the first number '));
+            var num2 = parseInt(prompt('Enter the second number '));
+            var sum = num1-num2;
+            document.write(sum);
+        }
+        function  mul()
+        {
+            var num1 = parseInt(prompt('Enter the first number '));
+            var num2 = parseInt(prompt('Enter the second number '));
+            var sum = num1*num2;
+            document.write(sum);
+        }
+        function  div()
+        {
+            var num1 = parseInt(prompt('Enter the first number '));
+            var num2 = parseInt(prompt('Enter the second number '));
+            var sum = num1/num2;
+            document.write(sum);
+        }
+    </script>
+</head>
+<body style = "font-size : 20px" >
+        <h1 style ="color:aqua;">CALCULATOR</h1>
+    <label for="fname">ENTER THE OPERATION YOU WANT TO PERFROM</label><br>
+    <input type = "button" onclick = "add()" value = " + "> addition
+    <br>
+    <input type = "button" onclick = "sub()" value = " - "> subtraction
+    <br>
+    <input type = "button" onclick = "mul()" value = " * "> multiplication
+    <br>
+    <input type = "button" onclick = "div()" value = " / "> division
+    <br>
+</body>

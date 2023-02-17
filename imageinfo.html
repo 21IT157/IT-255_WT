@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="en">
+<script>
+const  phone ={
+            name:"IPHONE",
+            model: " 14 PRO MAX ",
+            price : "0.18 MILLION",
+            weight : "240 gram",
+       };
+    const laptop ={
+            name:"ASUS",
+            model: "STRIX",
+            price :"71.85 K",
+            weight : "2.3 Kg"
+        };
+    const harley = {
+            name:"HARLEY DAVISDON ",
+            model: "VROD",
+            price : "3.7 million",
+            weight : " 302 kg"
+        };        
+function displayTable(obj)
+{
+    let table = document.getElementById("idDisplayTable");
+    table.innerHTML= null;
+    for (const key in obj)
+    {
+        let tr = document.createElement("tr");
+        let td1 = docment.createElement("td");
+        td1.textContent = key;
+        let td = document.createElement("td");
+        td2.textContent = obj[key];
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        table.appendChild(tr);
+    }
+
+}
+</script>    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        
+        <a href="  displayTable(phone)  "><img src="C:\Users\Administrator\Desktop\21IT157\boat tail.jpg"  style="width:300px;height:200px;"></a><br/>
+        <a href="  displayTable(laptop) "><img src="C:\Users\Administrator\Desktop\21IT157\cobra.jpg " style="width:300px;height:200px;"></a><br/>
+        <a href="  displayTable(harley) "><img src="C:\Users\Administrator\Desktop\21IT157\harley.jpg"  style="width:300px;height:200px;"></a><br/>
+
+        <table id = " idDisplayTable">
+
+        </table>
+    </body>
+    
+    </html>
+    
